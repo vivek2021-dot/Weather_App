@@ -30,7 +30,8 @@ Next, in Jenkins:
 To view the final output, check in the browser at 127.0.0.1:3000."
  
  ***************************************************************************************************************************************************************************************
-    ![image](https://github.com/vivek2021-dot/Weather_App/assets/88077049/f8ab1c07-4b9d-4d61-9c35-34b585422b72)
+    
+![image](https://github.com/vivek2021-dot/Weather_App/assets/88077049/e97b0300-9672-4ac5-91a1-79155a705c00)
 
       
     
