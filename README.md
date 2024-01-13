@@ -1,35 +1,35 @@
-created a Weather-App in Nodejs to run in Docker containerized
-******************************************************************************************************************************
-- Required A EC2 instances in aws cloud of single machine
-- second one - install jenkins & openjdk 17 
-         
-         sudo apt update
-         sudo apt upgrade
-         sudo apt install openjdk-17-jdk
-         sudo apt install openjdk-17-jre
-    sudo apt-get update
-    sudo apt-get install jenkins
-- after comletion. so need a docker in ubuntu
-   install a docker in ubuntu
-- go to jenkins
-   - required a some plugins for docker registry authentication
-   - Write a Declarative Pipeline in jenkins pipeline project
-   - added 4 to 5 stages in that jenkins pipeline.
-   - configure a global account to add git & docker credentials in that with tools configuration.
-- CI - continuos integration
-    - Git Checkout
-    - Docker Build Image
-    - Docker Push Image - in Docker Hub
-    - Docker Pull Image from Docker Hub
-- CD - Continous Delivery or Deployement
-    - Deploye A NodeJS Project of Weather_App in Docker Containerisation
-    - do to run app in docker container of expose 3000.
- 
+"I created a Weather-App in Node.js to run in a Docker containerized environment.
+*************************************************************************************************************************************************************
+In the AWS cloud, it required an EC2 instance of a single machine. For the second instance, I installed Jenkins and OpenJDK 17 using the following commands:
+
+- sudo apt update
+- sudo apt upgrade
+- sudo apt install openjdk-17-jdk
+- sudo apt install openjdk-17-jre
+- sudo apt-get update
+- sudo apt-get install jenkins
+
+After completing this, I installed Docker on Ubuntu:
+
+sudo apt install docker
+
+Next, in Jenkins:
+
+- I installed some plugins for Docker registry authentication.
+- I wrote a Declarative Pipeline in the Jenkins pipeline project.
+- I added 4 to 5 stages in that Jenkins pipeline.
+- I configured a global account to add Git and Docker credentials in the tools configuration.
+- For Continuous Integration (CI), the pipeline included the following stages:
+
+- Git Checkout
+- Docker Build Image
+- Docker Push Image to Docker Hub
+- Docker Pull Image from Docker Hub
+- For Continuous Delivery or Deployment (CD), I deployed a Node.js project of the Weather-App in Docker Containerization. The application runs in a Docker container and is exposed on port 3000.
+
+To view the final output, check in the browser at 127.0.0.1:3000."
  
  ***************************************************************************************************************************************************************************************
- Final Output 
-  - to check in browser. /127.0.0.1:3000
-
     ![image](https://github.com/vivek2021-dot/Weather_App/assets/88077049/f8ab1c07-4b9d-4d61-9c35-34b585422b72)
 
       
