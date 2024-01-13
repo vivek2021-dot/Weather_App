@@ -3,10 +3,8 @@ FROM ubuntu:latest
 ARG vdir=Fokeman 
 WORKDIR /WeatherApp
 
-RUN apt install -y nodejs
-COPY $vdir/node_modules ./WeatherApp
-
-RUN apt install npm 
+RUN sudo apt install nodejs & npm 
+COPY $vdir/node_modules ./WeatherApp 
 COPY $vdir/public ./WeatherApp
 COPY $vdir/views ./WeatherApp
 
@@ -19,4 +17,4 @@ RUN npm install ejs
 
 EXPOSE 8000
 
-CMD ["npm" "start"]
+CMD ["npm","start"]
