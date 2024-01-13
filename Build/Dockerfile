@@ -3,8 +3,8 @@ FROM ubuntu:latest
 ARG vdir=Fokeman 
 WORKDIR /WeatherApp
 
-RUN apt-get update && \ apt-get install -y nodejs npm
-
+RUN apt-get update
+RUN apt-get install -y nodejs npm 
 COPY $vdir/node_modules ./WeatherApp/node_modules
 COPY $vdir/public ./WeatherApp/public
 COPY $vdir/views ./WeatherApp/views
