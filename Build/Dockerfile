@@ -5,9 +5,9 @@ WORKDIR /WeatherApp
 
 RUN apt-get update
 RUN apt install -y nodejs npm 
-COPY $vdir/node_modules ./WeatherApp/node_modules
-COPY $vdir/public ./WeatherApp/public
-COPY $vdir/views ./WeatherApp/views
+COPY $vdir/node_modules .
+COPY $vdir/public .
+COPY $vdir/views .
 
 RUN npm install -g express
 COPY $vdir/package.json .
